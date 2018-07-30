@@ -1,0 +1,28 @@
+{
+  "name": "inspection-reporter",
+  "version": "0.0.1",
+  "description": "Real estate inspection document manager.",
+  "main": "server.js",
+  "author": "Oak Tree Realty",
+  "license": "MIT",
+  "dependencies": {
+    "connect-redis": "^3.3.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "helmet": "^3.9.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0",
+    "pg": "6.4.2",
+    "pg-hstore": "^2.3.2",
+    "redis": "^2.8.0",
+    "sequelize": "^4.22.7"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && yarn && yarn run build"
+  },
+  "engines": {
+    "node": "8.6.0"
+  }
+}
